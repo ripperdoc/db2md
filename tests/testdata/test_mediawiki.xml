@@ -1,0 +1,282 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.3/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.3/ http://www.mediawiki.org/xml/export-0.3.xsd" version="0.3" xml:lang="sv">
+  <siteinfo>
+    <sitename>Testpedia</sitename>
+    <base>http://mundanapedia.erinys.org/mediawiki/index.php?title=Huvudsida</base>
+    <generator>MediaWiki 1.15.3</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2">Media</namespace>
+      <namespace key="-1">Special</namespace>
+      <namespace key="0" />
+      <namespace key="1">Diskussion</namespace>
+      <namespace key="2">Användare</namespace>
+      <namespace key="3">Användardiskussion</namespace>
+      <namespace key="4">Testpedia</namespace>
+      <namespace key="5">Testpediadiskussion</namespace>
+      <namespace key="6">Fil</namespace>
+      <namespace key="7">Fildiskussion</namespace>
+      <namespace key="8">MediaWiki</namespace>
+      <namespace key="9">MediaWiki-diskussion</namespace>
+      <namespace key="10">Mall</namespace>
+      <namespace key="11">Malldiskussion</namespace>
+      <namespace key="12">Hjälp</namespace>
+      <namespace key="13">Hjälpdiskussion</namespace>
+      <namespace key="14">Kategori</namespace>
+      <namespace key="15">Kategoridiskussion</namespace>
+    </namespaces>
+  </siteinfo>
+
+  <page>
+    <title>Normal</title>
+    <id>1328</id>
+    <revision>
+      <id>5361</id>
+      <timestamp>2011-03-13T18:42:38Z</timestamp>
+      <contributor>
+        <username>Ymir</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve">
+
+=H1 inline formatting=
+
+''Italics'', '''bold''', and '''''both'''''. &lt;u&gt;Underlined&lt;/u&gt;, &lt;s&gt;Lorefix: strike-through&lt;/s&gt;, &lt;del&gt;deleted&lt;/del&gt;. Or &lt;code&gt;inline-code&lt;/code&gt;.
+
+== H2 ==
+
+Lorefix: Automatic Table of Contents (magic word): 
+__TOC__
+
+<!--Comment should be ignored-->
+
+Wiki-template/variable: {{testtemplate|hej}}
+
+===H3 block formatting===
+
+&lt;blockquote&gt;
+Blockquote
+&lt;/blockquote&gt;
+
+&lt;pre&gt;
+Pre-block.
+&lt;/pre&gt;
+
+<!-- this turns into two lines of inline pre, instead of a code block. Also get space after indented. Pandoc issue? -->
+ indented
+ block
+
+Before line
+----
+After
+
+==== H4 Links ====
+
+[[WikiLink]] or [[WikiLink]]s
+[[WikiLink|Captioned]] or [[WikiLink|''Formatted'' caption]]
+[[WikiLink#Heading]] or [[WikiLink#Heading|Captioned]] 
+
+Plain URL https://www.wikipedia.org, external [https://www.wikipedia.org] or captioned external [https://www.wikipedia.org/ Wikipedia].
+
+[[File:Wiki.png|200px|thumb|right|File links]] or [[Image:Uncaptioned.png]]
+
+[[Link|with: (weird) "chars"]]
+
+Nested: [[Bild:image.jpg|thumb|[[Person]] and [[Person2|Other Person]]]]
+
+Categories: [[Category:Category name]] [[Category:Hide category from link|]] [[:Category:Category name]].
+
+=====H5 Lists=====
+
+* One
+** One-point-one
+* Two 
+
+# One
+## One-point-one
+# Three 
+
+;item 1
+: definition 1
+;item 2
+: definition 2-1
+: definition 2-2
+
+:first indent
+:::third indent
+
+======H6 Tables======
+
+{| class="wikitable" style="text-align: center; width: 200px; height: 200px;"
+|+ Multiplication table
+|-
+! ×
+! 1
+! 2
+! 3
+|-
+! 1
+| 1 || 2 || 3
+|-
+! 2
+| 2 || 4 || 6
+|-
+! 3
+| 3 || 6 || 9
+|-
+! 4
+| 4 || 8 || 12
+|}
+
+{|
+|Orange
+|Apple
+|-
+|Bread
+|Pie
+|-
+|Butter
+|Ice cream 
+|}
+
+<!-- Below turns into HTML table instead of Markdown pipe table due to line breaks in it. Could fix by keeping the <br> through conversion.-->
+{|
+|Orange||Apple||more
+|-
+|Bread||Pie||more
+|-
+|Butter||Ice&lt;br/&gt;cream||and&lt;br/&gt;more
+|}
+
+{|cellpadding = &quot;5&quot;
+!align = &quot;left&quot;| Svärd !! width=10% | Huggskada
+|- style = &quot;background: #eee;&quot; align=&quot;center&quot;
+| align=&quot;left&quot; | Grangodíl || H+Ob3T6+2
+|}
+
+      </text>
+    </revision>
+  </page>
+
+  <page>
+    <title>'Tricky: Ϡ</title>
+    <id>1345</id>
+    <revision>
+      <id>5490</id>
+      <!-- timestamp removed
+      <timestamp>2011-06-08T05:17:04Z</timestamp>
+      -->
+      <contributor>
+        <username>Ymir</username>
+        <id>2</id>
+      </contributor>
+      <text xml:space="preserve">
+
+Smartypants:
+'single quote' to ‘smart single quote’.
+"double" to “smart double”
+``backticks'' to “curly”
+&lt;&lt; angle &gt;&gt;	to « smart angle »
+&quot;html-quote&quot; to “curly”
+ellipsis ... to …
+ndash -- to –
+mdash --- to —
+
+<!-- space around = breaks Pandoc table parsing but seemes acceptable to Mediawiki -->
+{|cellpadding = &quot;5&quot;
+!align = &quot;left&quot;| Svärd !! width=10% | Huggskada
+|- style=&quot;background: #eee;&quot; align=&quot;center&quot;
+| align=&quot;left&quot; | Grangodíl || H+Ob3T6+2
+|}
+
+{|cellpadding = &quot;5&quot;
+!align = &quot;left&quot;| Svärd !! width=10% | Huggskada
+|- style=&quot;background: #eee;&quot; align=&quot;center&quot;
+| align=&quot;left&quot; | Grangodíl || Fiske 7, Geografi 9, Gömma 12, Handel 9, Hoppa 10, Kasta 10, Klättra 14, Krigsföring 11, Kulturkännedom 11 (Momolan, Drunok, Caserion), Ledarskap 14 (tiraker, disciplin), Marsch 15, Navigation 15, Rida 11, Simma 10, Sjömanskap 15, Skumraskaffärer 13, Smyga 12, Speja 12, Spel dobbel 12, Supa 15 (Plamm), Väderkännedom 9, Värdera 10, Överlevnad 11, Övertala 12
+|}
+
+{|cellpadding = &quot;5&quot;
+!align = &quot;left&quot;| Spjut !! width=10% | Huggskada !! Krosskada !! Stickskada !! STYK !! Fattn !! BRYT !! SI !! Längd !! Vikt !! Pris
+|- style=&quot;background: #eee;&quot; align=&quot;center&quot;
+| align=&quot;left&quot; | Åskspjut || H+Ob1T6+3 || K+1 || S+Ob4T6 || 6 || 2H || 20 || 4/2 || 185 cm || 1,3 kg || -
+|- align=&quot;center&quot; <!-- empty last row, remove? -->
+|}
+
+Lorefix: Invalid line-separator <!-- Interpreted as an empty list-->
+********************************************************************************
+
+Poor spacing on '' italics&amp;nbsp;'', ''' bold''', and '''''both '''''&amp;nbsp;
+
+&lt;b&gt;HTML bolded won't convert to markdown&lt;/b&gt; <!-- possibly a Pandoc bug? -->
+
+*Item1 <!-- gets comment in row between, expected behaviour, to separate lists https://github.com/jgm/pandoc/issues/6214-->
+
+*Item2
+
+== Lorefix: Implied heading examples ==
+
+'''Heading'''&lt;br&gt;
+Paragraph
+
+''' Heading '''
+
+Paragraph
+
+''' Heading '''
+&lt;br&gt;Paragraph
+
+== Lorefix: Implied list ==
+
+'''Item1:''' Text1&lt;br&gt;
+'''Item2:''' Text2 &lt;br&gt;
+<!-- item without bold start could be considered but could generate false positives in e.g. poems-->
+
+== Lorefix: Unnecessary linebreaks ==
+
+&lt;br&gt; 
+
+&lt;br&gt; 
+
+&lt;br&gt; 
+
+== Links ==
+
+[[Help:Editing|Lorefix: Unknown namespaces will be striked]] <!-- Lore fix-->
+
+Lorefix: [[image:lowercased.png]], [[Fil:svensk.png]], [[Bild:svensk.png]]
+
+</text>
+    </revision>
+  </page>
+
+  <page>
+    <title>Mall:Test</title>
+    <id>404</id>
+    <revision>
+      <id>7551</id>
+      <timestamp>2012-09-25T15:56:33Z</timestamp>
+      <!-- contributor removed
+      <contributor>
+        <username>Lycan</username>
+        <id>1</id>
+      </contributor> -->
+      <text xml:space="preserve">Should be ignored as in ns "Mall:"</text>
+    </revision>
+  </page>
+
+  <page>
+    <!-- empty title -->
+    <title></title>
+    <id>1345</id>
+    <revision>
+      <id>5490</id>
+      <timestamp>2011-06-08T05:17:04Z</timestamp>
+      <contributor>
+        <username></username>
+        <id>2</id>
+      </contributor>
+      <!-- Test redirect -->
+      <text xml:space="preserve">#OMDIRIGERING [[Abelard]]</text>
+    </revision>
+  </page>
+
+</mediawiki>

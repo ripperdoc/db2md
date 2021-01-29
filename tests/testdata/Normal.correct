@@ -1,0 +1,112 @@
+---
+author: kalle
+category:
+- Category name
+- Hide category from link
+created_at: '2011-03-13T18:42:38+00:00'
+id: normal
+image:
+- Uncaptioned.png
+- Wiki.png
+- image.jpg
+title: Normal
+---
+## H1 inline formatting
+
+*Italics*, **bold**, and ***both***. <u>Underlined</u>, ~~Lorefix: strike-through~~, ~~deleted~~. Or `inline-code`.
+
+### H2
+
+Lorefix: Automatic Table of Contents (magic word):
+
+Wiki-template/variable:
+
+#### H3 block formatting
+
+> Blockquote
+
+    Pre-block.
+
+`indented`
+`block`
+
+Before line
+
+------------------------------------------------------------------------
+
+After
+
+##### H4 Links
+
+[WikiLink] or [WikiLinks][WikiLink] [Captioned][WikiLink] or [*Formatted* caption][WikiLink] [WikiLink\#Heading] or [Captioned][WikiLink\#Heading]
+
+Plain URL <https://www.wikipedia.org>, external [1] or captioned external [Wikipedia].
+
+![File links] or ![][2]
+
+[with: (weird) "chars"]
+
+Nested: ![[Person] and [Other Person]][3]
+
+Categories: .
+
+###### H5 Lists
+
+-   One
+    -   One-point-one
+-   Two
+
+1.  One
+    1.  One-point-one
+2.  Three
+
+item 1
+:   definition 1
+
+item 2
+:   definition 2-1
+:   definition 2-2
+
+<!-- -->
+
+:   first indent
+
+    :
+
+        :   third indent
+
+###### H6 Tables
+
+| ×   | 1   | 2   | 3   |
+|-----|-----|-----|-----|
+| 1   | 1   | 2   | 3   |
+| 2   | 2   | 4   | 6   |
+| 3   | 3   | 6   | 9   |
+| 4   | 4   | 8   | 12  |
+
+Multiplication table
+
+|        |           |
+|--------|-----------|
+| Orange | Apple     |
+| Bread  | Pie       |
+| Butter | Ice cream |
+
+<table><tbody><tr class="odd"><td><p>Orange</p></td><td><p>Apple</p></td><td><p>more</p></td></tr><tr class="even"><td><p>Bread</p></td><td><p>Pie</p></td><td><p>more</p></td></tr><tr class="odd"><td><p>Butter</p></td><td><p>Ice<br />
+cream</p></td><td><p>and<br />
+more</p></td></tr></tbody></table>
+
+| Svärd     | Huggskada |
+|:----------|-----------|
+| Grangodíl | H+Ob3T6+2 |
+
+  [WikiLink]: WikiLink
+  [WikiLink\#Heading]: WikiLinkHeading
+  [1]: https://www.wikipedia.org
+  [Wikipedia]: https://www.wikipedia.org/
+  [File links]: Wiki.png "File links"
+  [2]: Uncaptioned.png "Uncaptioned.png"
+  [with: (weird) "chars"]: Link
+  [Person]: Person
+  [Other Person]: Person2
+  [3]: image.jpg "Person and Other Person"

@@ -1,0 +1,66 @@
+---
+author: Ymir
+id: '''tricky ϡ'
+image:
+- lowercased.png
+- svensk.png
+title: '''Tricky: Ϡ'
+---
+Smartypants: 'single quote' to ‘smart single quote’. "double" to “smart double” \`\`backticks'' to “curly” &lt;&lt; angle &gt;&gt; to « smart angle » "html-quote" to “curly” ellipsis ... to … ndash -- to – mdash --- to —
+
+| Svärd     | Huggskada |
+|:----------|-----------|
+| Grangodíl | H+Ob3T6+2 |
+
+| Svärd     | Huggskada                                                                                                                                                                                                                                                                                                                                                               |
+|:----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Grangodíl | Fiske 7, Geografi 9, Gömma 12, Handel 9, Hoppa 10, Kasta 10, Klättra 14, Krigsföring 11, Kulturkännedom 11 (Momolan, Drunok, Caserion), Ledarskap 14 (tiraker, disciplin), Marsch 15, Navigation 15, Rida 11, Simma 10, Sjömanskap 15, Skumraskaffärer 13, Smyga 12, Speja 12, Spel dobbel 12, Supa 15 (Plamm), Väderkännedom 9, Värdera 10, Överlevnad 11, Övertala 12 |
+
+| Spjut    | Huggskada | Krosskada | Stickskada | STYK | Fattn | BRYT | SI  | Längd  | Vikt   | Pris |
+|:---------|-----------|-----------|------------|------|-------|------|-----|--------|--------|------|
+| Åskspjut | H+Ob1T6+3 | K+1       | S+Ob4T6    | 6    | 2H    | 20   | 4/2 | 185 cm | 1,3 kg | \-   |
+|          |           |           |            |      |       |      |     |        |        |      |
+
+Lorefix: Invalid line-separator
+
+------------------------------------------------------------------------
+
+Poor spacing on *italics *, **bold**, and ***both***
+
+<b>HTML bolded won't convert to markdown</b>
+
+-   Item1
+
+<!-- -->
+
+-   Item2
+
+## Lorefix: Implied heading examples
+
+### Heading
+
+Paragraph
+
+### Heading
+
+Paragraph
+
+### Heading
+
+Paragraph
+
+## Lorefix: Implied list
+
+-   **Item1:** Text1
+-   **Item2:** Text2
+
+## Lorefix: Unnecessary linebreaks
+
+## Links
+
+~~Lorefix: Unknown namespaces will be striked~~
+
+Lorefix: ![][1], ![][2], ![][2]
+
+  [1]: lowercased.png "lowercased.png"
+  [2]: svensk.png "svensk.png"

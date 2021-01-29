@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Test CLI",
+            "type": "python",
+            "request": "launch",
+            "program": "cli.py",
+            "args": [
+              "~/Downloads/ola-mysql-backup-2013-03-31/kampanj_wp.sql",
+              // "~/dev/src/drangopedia/Mundanapedia-20160208152735.xml",
+              // "~/dev/src/encyclopedia-mundana/eon_dump.xml",
+              // "~/dev/src/encyclopedia-mundana/"
+              "~/dev/src/kampanj_wp/",
+              // "ilya",
+              // "--dry-run"
+            ],
+            "justMyCode": false
+          }
+    ]
+}

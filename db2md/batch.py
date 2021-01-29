@@ -1,0 +1,1 @@
+../../lore/tools/batch.py
