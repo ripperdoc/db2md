@@ -1,6 +1,6 @@
 # DB2MD
 
-DB2MD is a little library with CLI tool to convert documents, posts and text content stored in various CMS database files to a clean(ish) directory of Markdown folders, suitable for editing in tools like Foam or publishing in tools like Eleventy or Jekyll. The tool is focused on pulling from the raw dump files (assuming that the original site or database may no longer be live).
+DB2MD is a small library with CLI tool to convert documents, posts and text content stored in various CMS database files to a clean(ish) directory of Markdown files, suitable for editing in tools like Foam or publishing in tools like Eleventy or Jekyll. The tool is focused on pulling from the raw dump files (assuming that the original site or database may no longer be live).
 
 ## Import sources
 

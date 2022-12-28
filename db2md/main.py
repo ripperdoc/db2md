@@ -83,7 +83,6 @@ category_pattern = re.compile(r"category|kategori", flags=re.IGNORECASE)
 wiki_redirect_pattern = re.compile(r"^#(REDIRECT|OMDIRIGERING) ", flags=re.IGNORECASE)
 # link_text_invalid_chars = re.compile(r'[#<>[\]\|{}`\\]+')
 # link_text_invalid_chars = re.compile("[^%!\"$&'()*,\\-.\\/0-9:;=?@A-Z\\\\^_`a-z~\\x80-\\xFF+]")
-# uri_invalid_chars = re.compile("[]")
 
 ignore_ns = (
     "Special|Talk|Diskussion|User|Användare|User_talk|Användardiskussion|File_talk|Fildiskussion|"

@@ -18,8 +18,7 @@ def convert(
 
     # No need, let user pick their exact folder instead
     out_folder = os.path.abspath(out_folder)
-    # out_folder = os.path.join(output_folder, os.path.splitext(os.path.basename(wiki_xml_file))[0])
-    # os.makedirs(out_folder, exist_ok=True)
+
     columns = [Column(header="Title", import_key="title"), Column(header="Path", result_key="path")]
     extra_metadata = json.loads(extra_metadata) if extra_metadata else {}
     b = Batch(
